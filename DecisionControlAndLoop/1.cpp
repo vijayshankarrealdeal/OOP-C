@@ -255,7 +255,7 @@ public:
     }
     void p9()
     {
-        for (int i = 1; i <= 0; i--)
+        for (int i = 1; i <= 5; i--)
         {
             for (int k = 5; k >= 1; k--)
             {
@@ -265,7 +265,6 @@ public:
                     std::cout<<" "<< j;
                 }
             }
-
             std::cout << "\n";
         }
     }
@@ -273,5 +272,5 @@ public:
 int main()
 {
     DecisionControlAndLoop d;
-    d.p8();
+    d.p9();
 }
