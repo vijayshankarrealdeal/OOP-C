@@ -82,10 +82,28 @@ public:
             i++;
         }
     }
+    /// leap not leap
+    void leap()
+    {
+        int yr;
+        std::cin>>yr;
+        if((yr%4 == 0 && yr%100 != 0 )|| yr%400 == 0){
+            std::cout<<"Leap Yr";
+        }else{
+            std::cout<<"chal nikal yaha se";
+        }
+    }
+    void great_()
+
+    {
+        int a,b,c;
+        std::cin>>a>>b>>c;
+        
+    }
     
 };
 int main()
 {
     DecisionControlAndLoop d;
-    d.upperlow_();
+    d.leap();
 }
