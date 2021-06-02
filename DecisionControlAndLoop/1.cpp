@@ -122,11 +122,36 @@ public:
         }
         std::cout<<sum;
     }
-
+    void enter_()
+    {
+        int num;
+        int postive = 0,negative =0,zero = 0;
+        while (true)
+        {
+           std:: cin>>num;
+           if(num == -1)
+           {
+               break;
+           }
+            if(num>0)
+            {
+                postive++;
+                std::cout<<"Number of Postive"<<postive;
+            }else if(num<0)
+            {
+                negative++;
+                std::cout<<"Number of Postive"<<negative;
+            }else{
+                zero ++;
+                std::cout<<"Number of Postive"<<zero;
+            }
+        }
+        
+    }
     
 };
 int main()
 {
     DecisionControlAndLoop d;
-    d.sumx();
+    d.enter_();
 }
