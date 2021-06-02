@@ -98,12 +98,20 @@ public:
     {
         int a,b,c;
         std::cin>>a>>b>>c;
-        
+        if(a>b && a>c)
+        {
+            std::cout<<a;
+        }else if(b>c && b>a){
+            std::cout<<b;
+        }else{
+            std::cout<<c;
+        }
+
     }
     
 };
 int main()
 {
     DecisionControlAndLoop d;
-    d.leap();
+    d.great_();
 }
