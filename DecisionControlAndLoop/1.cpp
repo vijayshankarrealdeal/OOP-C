@@ -233,11 +233,22 @@ public:
     }
     void p7()
     {
-        for (int i = 0; i < 6; i++)
+        for (int i = 65; i <= 70; i++)
         {
-            for (int j = 0; j < i; j++)
+            for (int j = 65; j <= i; j++)
             {
-                std::cout << count++;
+                std::cout<<char(j);
+            }
+            std::cout << "\n";
+        }
+    }
+        void p8()
+    {
+        for (int i = 65; i <= 70; i++)
+        {
+            for (int j = 65; j <= i; j++)
+            {
+                std::cout<<char(j);
             }
             std::cout << "\n";
         }
