@@ -237,19 +237,35 @@ public:
         {
             for (int j = 65; j <= i; j++)
             {
-                std::cout<<char(j);
+                std::cout << char(j);
             }
             std::cout << "\n";
         }
     }
-        void p8()
+    void p8()
     {
-        for (int i = 65; i <= 70; i++)
+        for (int i = 5; i >= 0; i--)
         {
-            for (int j = 65; j <= i; j++)
+            for (int j = 0; j <= i; j++)
             {
-                std::cout<<char(j);
+                std::cout << j;
             }
+            std::cout << "\n";
+        }
+    }
+    void p9()
+    {
+        for (int i = 1; i <= 0; i--)
+        {
+            for (int k = 5; k >= 1; k--)
+            {
+                std::cout << " ";
+                for (int j = 1; j <= i; j++)
+                {
+                    std::cout<<" "<< j;
+                }
+            }
+
             std::cout << "\n";
         }
     }
@@ -257,5 +273,5 @@ public:
 int main()
 {
     DecisionControlAndLoop d;
-    d.p7();
+    d.p8();
 }
