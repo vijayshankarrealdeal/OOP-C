@@ -108,10 +108,25 @@ public:
         }
 
     }
+    //Loops-----------------------------------------
+    //sum of n numbers
+    void sumx()
+    {
+        int i =0;
+        int sum = 0;
+        while(i<value)
+        {
+            sum = sum + i;
+            i++;
+        
+        }
+        std::cout<<sum;
+    }
+
     
 };
 int main()
 {
     DecisionControlAndLoop d;
-    d.great_();
+    d.sumx();
 }
