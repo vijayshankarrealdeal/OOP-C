@@ -167,32 +167,50 @@ public:
     {
         for (int i = 0; i < 5; i++)
         {
-            std::cout<<"Pass "<<i+1<<" -";
+            std::cout << "Pass " << i + 1 << " -";
             for (int j = 0; j < 5; j++)
             {
-                std::cout<<" " <<j+1;
+                std::cout << " " << j + 1;
             }
-            std::cout<<"\n";
-            
+            std::cout << "\n";
         }
-        
     }
-        void p2()
+    void p2()
     {
         for (int i = 0; i < 5; i++)
         {
             for (int j = 0; j < 5; j++)
             {
-                std::cout<<"*";
+                std::cout << "*";
             }
-            std::cout<<"\n";
-            
+            std::cout << "\n";
         }
-        
+    }
+    void p3()
+    {
+        for (int i = 0; i < 5; i++)
+        {
+            for (int j = 0; j < i; j++)
+            {
+                std::cout << "*";
+            }
+            std::cout << "\n";
+        }
+    }
+    void p4()
+    {
+        for (int i = 0; i < 6; i++)
+        {
+            for (int j = 0; j < i; j++)
+            {
+                std::cout <<i;
+            }
+            std::cout << "\n";
+        }
     }
 };
 int main()
 {
     DecisionControlAndLoop d;
-    d.p2();
+    d.p4();
 }
