@@ -167,9 +167,23 @@ public:
     {
         for (int i = 0; i < 5; i++)
         {
+            std::cout<<"Pass "<<i+1<<" -";
             for (int j = 0; j < 5; j++)
             {
-                std::cout<<i+1<<"--"<<j;
+                std::cout<<" " <<j+1;
+            }
+            std::cout<<"\n";
+            
+        }
+        
+    }
+        void p2()
+    {
+        for (int i = 0; i < 5; i++)
+        {
+            for (int j = 0; j < 5; j++)
+            {
+                std::cout<<"*";
             }
             std::cout<<"\n";
             
@@ -180,5 +194,5 @@ public:
 int main()
 {
     DecisionControlAndLoop d;
-    d.p1();
+    d.p2();
 }
