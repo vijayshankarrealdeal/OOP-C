@@ -203,7 +203,41 @@ public:
         {
             for (int j = 0; j < i; j++)
             {
-                std::cout <<i;
+                std::cout << i;
+            }
+            std::cout << "\n";
+        }
+    }
+    void p5()
+    {
+        for (int i = 0; i < 6; i++)
+        {
+            for (int j = 0; j < i; j++)
+            {
+                std::cout << j + 1;
+            }
+            std::cout << "\n";
+        }
+    }
+    void p6()
+    {
+        int count = 0;
+        for (int i = 0; i < 6; i++)
+        {
+            for (int j = 0; j < i; j++)
+            {
+                std::cout << count++;
+            }
+            std::cout << "\n";
+        }
+    }
+    void p7()
+    {
+        for (int i = 0; i < 6; i++)
+        {
+            for (int j = 0; j < i; j++)
+            {
+                std::cout << count++;
             }
             std::cout << "\n";
         }
@@ -212,5 +246,5 @@ public:
 int main()
 {
     DecisionControlAndLoop d;
-    d.p4();
+    d.p7();
 }
