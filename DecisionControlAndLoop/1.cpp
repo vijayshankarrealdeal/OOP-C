@@ -255,22 +255,46 @@ public:
     }
     void p9()
     {
-        for (int i = 1; i <= 5; i--)
+        for (int i = 1; i <= 5; i++)
         {
             for (int k = 5; k >= 1; k--)
-            {
-                std::cout << " ";
-                for (int j = 1; j <= i; j++)
+            std::cout << " ";
+            for (int j = 1; j <= i; j++)
                 {
                     std::cout<<" "<< j;
                 }
-            }
             std::cout << "\n";
         }
+    }
+    void p10()
+    {
+       int n = 5;
+       int i,j,k,l;
+       for (i = 1; i <= n; i++)
+       {
+           for ( k = n; k >= i; k--)
+           std::cout<<" ";
+           for (j = 1; j <= i; j++)
+           std::cout<<""<<j;
+           for ( l = j-2; l>0; l--)
+           std::cout<<""<<l;
+           std::cout<<"\n";   
+       }
+    }
+    void fact()
+    {
+        int n = 5;
+        int pr = 1;
+        int res;
+        for (int i = 1; i <= n; i++)
+        {
+            pr = pr*i;
+        }
+        std::cout<<pr;
     }
 };
 int main()
 {
     DecisionControlAndLoop d;
-    d.p9();
+    d.fact();
 }
