@@ -301,6 +301,7 @@ public:
         {
             if(n%i == 0)
             {
+                std::cout<<i;
                 count++;
             }
         }
